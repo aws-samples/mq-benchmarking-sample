@@ -8,7 +8,7 @@ The architecture below shows the resources deployed as part of this CDK applicat
 # Prerequisites
 * [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) (version 2.1.31 or later)
 * [Session Manager plugin for the AWS CLI](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html)
-* Docker container image built and hosted locally or in a Amazon Elastic Container Registry (ECR) repository based on the sample provided [here](https://github.com/jaidodabom/Benchmark-Container-ActiveMQ)
+* Docker container image built and hosted locally or in a Amazon Elastic Container Registry (ECR) repository based on the sample provided [here](https://github.com/aws-samples/mq-benchmarking-container-image-sample)
 * Ensure you have an up-to-date Python install available, and [AWS CDK
 v2](https://docs.aws.amazon.com/cdk/v2/guide/home.html) installed.
 
