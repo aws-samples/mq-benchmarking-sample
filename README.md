@@ -45,6 +45,8 @@ An example of all the context variables passed in via the command line is shown 
 ```
 cdk deploy "*" -c vpc_cidr=10.0.0.0/16 -c mq_cidr=10.0.0.0/16 -c broker_instance_type=mq.m5.large -c mq_username=testuser -c tasks=2 -c container_repo_url=<YOUR CONTAINER REPO URL> -c container_repo_tag=<YOUR CONTAINER REPO TAG>
 ```
+From the example command above (best practice), the VPC CIDR specified is the same as MQ CIDR. If you decide to use the above command, you will need to ensure that your VPC CIDR range is the same as your MQ CIDR range. AWS recommends this due to security reasons and to ensure that your broker endpoint is only accessible from recognized IP ranges.
+
 The password for accessing your Amazon MQ Broker is generated and stored during deployment using AWS Secrets Manager. The secret ARN is output once the application is deployed, make sure to specify this along with the region where this app is deployed. You can retrieve this by accessing Secrets Manager via the AWS Management Console or by the AWS CLI by running the command:
 ```
 aws secretsmanager get-secret-value --secret-id <secret-arn> --region <region>
