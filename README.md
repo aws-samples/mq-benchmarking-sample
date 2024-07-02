@@ -34,7 +34,7 @@ You can deploy the application using the following command:
 | Context Variable    | Description                                                                                                      | Default Value       |
 |---------------------|------------------------------------------------------------------------------------------------------------------|---------------------|
 | `vpc_cidr`          | Configures the VPC with the CIDR value specified here.                                                           | `10.42.0.0/16`      |
-| `mq_cidr`           | Represents the security group CIDR range of the MQ. This must be set to the VPC CIDR. For more flexibility with source IP ranges, you can edit the broker security group of your CDK deployment. broker.                                                       | `0.0.0.0/0`         |
+| `mq_cidr`           | Represents the security group CIDR range of the MQ broker                                                       | `0.0.0.0/0`         |
 | `broker_instance_type` | You can specify the instance type for the Amazon MQ Broker which will be deployed.                             | `mq.m5.large`       |
 | `mq_username`       | The username for ActiveMQ web console access.                                                                    | `workshopUser`      |
 | `tasks`             | Number of Fargate tasks to run with your Docker image.                                                           | `1`                 |
