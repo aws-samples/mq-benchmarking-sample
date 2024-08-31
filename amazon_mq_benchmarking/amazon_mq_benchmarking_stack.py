@@ -75,7 +75,7 @@ class MQStack(Stack):
             engine_type="ACTIVEMQ",
             publicly_accessible=True,
             host_instance_type=instance_type,
-            engine_version="5.17.6",
+            engine_version="5.18",
             users=[
                 mq.CfnBroker.UserProperty(
                     username=broker_username,
