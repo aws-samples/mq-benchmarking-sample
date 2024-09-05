@@ -1,6 +1,8 @@
 # Overview
 This AWS Cloud Development Kit (CDK) application deploys an `active/standby` Amazon MQ broker which is an instance type of `mq.m5.large`. The stack also deploys an Amazon Elastic Container Service (ECS) Cluster with a task. This task runs a Docker image, which should be provided via a Docker Image Repository URL at deployment time. You also have the option to override parameters when deploying to modify the instance type and other configuration details documented below. Once the application deploys successfully you will be given an exec command as an output for you to exec into a running Fargate task to then perform your benchmarking.
 
+There is also a [blog](https://aws.amazon.com/blogs/compute/measuring-amazon-mq-throughput-using-maven-2-benchmark-and-aws-cdk/) which provides a walkthrough of the steps.
+
 # Architecture
 The architecture below shows the resources deployed as part of this CDK application deployment:
 ![CDK Architecture](Architecture.png)
